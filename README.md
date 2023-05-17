@@ -33,16 +33,12 @@
                     else
                         res = res + (char)((int)'A' + n - 10);
 }
-            }
-            catch (Exception e)
+            }            catch (Exception e)
             {              // когато стека се изпразни,
                 // представянето на числото е формирано
-            }
-            return res;
-        }
-        static void Main(string[] args)
-        {
-            int number = int.Parse(Console.ReadLine());
+            }          return res;
+        }     static void Main(string[] args)
+        {   int number = int.Parse(Console.ReadLine());
             int baseSS = int.Parse(Console.ReadLine());
             Console.WriteLine(PreobrChislo(number, baseSS));
         }
